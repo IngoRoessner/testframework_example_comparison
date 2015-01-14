@@ -5,14 +5,13 @@
 #include <cppunit/TestResultCollector.h>
 #include <cppunit/TestRunner.h>
 
-#include "hierarchy/BoardGame.h"
-#include "hierarchy/Chess.h"
-#include "hierarchy/BoardGameTest.h"
-#include "hierarchy/ChessTest.h"
+#include "BoardGameTest.h"
+#include "ChessTest.h"
+#include "../src/hierarchy/BoardGame.h"
+#include "../src/hierarchy/Chess.h"
+#include "MoneyTest.h"
 
-#include "money/MoneyTest.h"
-
-#include "simple/ExampleTestCase.h"
+#include "ExampleTestCase.h"
 
 int
 main( int argc, char* argv[] )

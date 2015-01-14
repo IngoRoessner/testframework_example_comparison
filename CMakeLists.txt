@@ -4,20 +4,21 @@ project(ltest_example_compare)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -lcppunit")
 
 set(CppUnit_CppUnit
-    examples/cppunit/cppunit/hierarchy/BoardGame.cpp
-    examples/cppunit/cppunit/hierarchy/BoardGame.h
-    examples/cppunit/cppunit/hierarchy/BoardGameTest.h
-    examples/cppunit/cppunit/hierarchy/Chess.cpp
-    examples/cppunit/cppunit/hierarchy/Chess.h
-    examples/cppunit/cppunit/hierarchy/ChessTest.h
-    examples/cppunit/cppunit/money/Money.h
-    examples/cppunit/cppunit/money/MoneyTest.cpp
-    examples/cppunit/cppunit/money/MoneyTest.h
-    examples/cppunit/cppunit/money/StdAfx.cpp
-    examples/cppunit/cppunit/money/StdAfx.h
-    examples/cppunit/cppunit/simple/ExampleTestCase.cpp
-    examples/cppunit/cppunit/simple/ExampleTestCase.h
-    examples/cppunit/cppunit/Main.cpp)
+    examples/cppunit/cppunit/BoardGameTest.h
+    examples/cppunit/cppunit/ChessTest.h
+    examples/cppunit/cppunit/ExampleTestCase.cpp
+    examples/cppunit/cppunit/ExampleTestCase.h
+    examples/cppunit/cppunit/Main.cpp
+    examples/cppunit/cppunit/MoneyTest.cpp
+    examples/cppunit/cppunit/MoneyTest.h
+    examples/cppunit/src/hierarchy/BoardGame.cpp
+    examples/cppunit/src/hierarchy/BoardGame.h
+    examples/cppunit/src/hierarchy/Chess.cpp
+    examples/cppunit/src/hierarchy/Chess.h
+    examples/cppunit/src/money/Money.h
+    examples/cppunit/src/money/StdAfx.cpp
+    examples/cppunit/src/money/StdAfx.h
+    )
 
 link_libraries(cppunit)
 

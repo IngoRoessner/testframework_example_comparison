@@ -2,7 +2,7 @@
 #ifndef MONEYTEST_H
 #define MONEYTEST_H
 
-#include "Money.h"
+#include "../src/money/Money.h"
 
 #include <cppunit/extensions/HelperMacros.h>
 

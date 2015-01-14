@@ -1,8 +1,8 @@
 // MoneyTest.cpp
 
-#include "StdAfx.h"
+#include "../src/money/StdAfx.h"
 #include <cppunit/config/SourcePrefix.h>
-#include "Money.h"
+#include "../src/money/Money.h"
 #include "MoneyTest.h"
 
 // Registers the fixture into the 'registry'
