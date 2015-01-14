@@ -46,15 +46,16 @@ TestSuite MoneyTest = {
             LTAssert::True( &money == &(money += money12FF) );  // add returns ref. on 'this'.
         }),
 
+
+        ltest().ignoreNext(),
         ltest().addTest("testAddThrow", [](){
             // Set up
             const Money money123FF( 123, "FF" );
 
             // Process
             Money money( 123, "USD" );
-            LTAssert::ExpectException<std::exception>([&](){
-                money += money123FF;        // should throw an exception
-            });
+
+            money += money123FF;        // should throw an exception
         })
 };
 

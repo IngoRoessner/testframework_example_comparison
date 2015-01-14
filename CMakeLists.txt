@@ -23,6 +23,7 @@ set(CppUnit_CppUnit
 set(CppUnit_LTest
     examples/cppunit/ltest/Main.cpp
     examples/cppunit/ltest/MoneyTest.h
+    examples/cppunit/ltest/BoardGameTest.h
     examples/cppunit/src/hierarchy/BoardGame.cpp
     examples/cppunit/src/hierarchy/BoardGame.h
     examples/cppunit/src/hierarchy/Chess.cpp
@@ -30,6 +31,7 @@ set(CppUnit_LTest
     examples/cppunit/src/money/Money.h
     examples/cppunit/src/money/StdAfx.cpp
     examples/cppunit/src/money/StdAfx.h)
+
 
 link_libraries(cppunit)
 link_libraries(ltest)
