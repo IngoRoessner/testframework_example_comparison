@@ -9,12 +9,12 @@ auto m_game = manageFixture<BoardGame*>()
     .after([](BoardGame*& bg){ delete bg;});
 
 TestSuite BoardGameTest = {
-    ltest().addTest("testReset", [](){
+    ltest().addTest("BoardGameTest::testReset", [](){
         LTAssert::True(m_game()->reset());
     }),
 
-    ltest().ignoreNext(),
-    ltest().addTest("testResetShouldFail", [](){
+    ltest().addTest("BoardGameTest::testResetShouldFail", [](){
+        std::cout << "The following test fails, this is intended:" << std::endl;
         LTAssert::True( !(m_game()->reset()) );
     })
 };

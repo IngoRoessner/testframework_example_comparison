@@ -5,7 +5,7 @@
 #include <ltest/LTest.h>
 
 TestSuite MoneyTest = {
-        ltest().addTest("testConstructor", [](){
+        ltest().addTest("MoneyTest::testConstructor", [](){
             // Set up
             const std::string currencyFF( "FF" );
             const double longNumber = 1234.5678;
@@ -18,7 +18,7 @@ TestSuite MoneyTest = {
             LTAssert::Equal( currencyFF, money.getCurrency() );
         }),
 
-        ltest().addTest("testEqual", [](){
+        ltest().addTest("MoneyTest::testEqual", [](){
             // Set up
             const Money money123FF( 123, "FF" );
             const Money money123USD( 123, "USD" );
@@ -32,7 +32,7 @@ TestSuite MoneyTest = {
             LTAssert::True( money12USD != money123FF );    // != currency and != amount
         }),
 
-        ltest().addTest("testAdd", [](){
+        ltest().addTest("MoneyTest::testAdd", [](){
             // Set up
             const Money money12FF( 12, "FF" );
             const Money expectedMoney( 135, "FF" );
@@ -46,9 +46,7 @@ TestSuite MoneyTest = {
             LTAssert::True( &money == &(money += money12FF) );  // add returns ref. on 'this'.
         }),
 
-
-        ltest().ignoreNext(),
-        ltest().addTest("testAddThrow", [](){
+        ltest().addTest("MoneyTest::testAddThrow", [](){
             // Set up
             const Money money123FF( 123, "FF" );
 

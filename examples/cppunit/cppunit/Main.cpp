@@ -29,11 +29,12 @@ main( int argc, char* argv[] )
 
   // Add the top suite to the test runner
   CPPUNIT_NS::TestRunner runner;
-  runner.addTest( CPPUNIT_NS::TestFactoryRegistry::getRegistry().makeTest() );
+
   runner.addTest( BoardGameTest<BoardGame>::suite() );
   runner.addTest( ChessTest<Chess>::suite() );
   runner.addTest( MoneyTest::suite() );
   runner.addTest(ExampleTestCase::suite());
+
   runner.run( controller );
 
   // Print test in a compiler compatible format.

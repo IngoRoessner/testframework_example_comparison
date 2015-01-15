@@ -24,6 +24,8 @@ set(CppUnit_LTest
     examples/cppunit/ltest/Main.cpp
     examples/cppunit/ltest/MoneyTest.h
     examples/cppunit/ltest/BoardGameTest.h
+    examples/cppunit/ltest/ChessTest.h
+    examples/cppunit/ltest/ExampleTestCase.h
     examples/cppunit/src/hierarchy/BoardGame.cpp
     examples/cppunit/src/hierarchy/BoardGame.h
     examples/cppunit/src/hierarchy/Chess.cpp
